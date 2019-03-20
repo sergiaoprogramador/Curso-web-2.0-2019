@@ -1,0 +1,53 @@
+<!-- Doc = documento e type = tipo. Tipo do documento-->
+<!DOCTYPE html>
+<html> <!-- Toda página web tem essa tag, define o inicio e o fim do documento -->
+
+    <head> <!-- Define cabeçalho da página. Informações que não aparecem para o usuario -->
+
+        <title> Meu Site </title> <!-- Define o titulo da página -->
+        <meta charset="utf-8"> <!-- Define o padrão de codificação -->
+
+    </head>
+
+    <body> <!-- Define o corpo da página. Informações que aparecem para o usuario -->
+
+        <!-- https://pt.wikipedia.org/wiki/Lista_de_campeões_da_Fórmula_1 -->
+        <table border="1" width="100%">
+
+            <tr><!-- table row - linha da tabela -->
+                <th>Código</th> <!-- table header - cabeçalho da tabela  -->
+                <th>Produto</th>
+                <th>Preço</th>
+            </tr>
+
+            <tr>
+                <td>001</td> <!-- table data - dados da tabela / celulas da tabela -->
+                <td>Notebook</td>
+                <td>R$ 2.500,99</td>
+            </tr>
+
+            <tr>
+                <td>002</td>
+                <td>Tablet</td>
+                <td>R$ 999,99</td>
+            </tr>
+            
+            <tr>
+                <td rowspan="2">Desconto</td><!-- row span - extensão da linha -->
+                <td colspan="2">cupom1 -R$ 10</td><!-- column span - extensão da coluna -->
+            </tr> 
+
+            <tr>
+                <td colspan="2">cupom2 -R$ 12</td><!--column span - extensão da coluna -->
+            </tr>
+
+            <tr>
+                <td>Total:</td>
+                <td colspan="2">R$ 3.478,98</td>
+            </tr>
+
+        </table>
+
+    </body>
+
+</html>

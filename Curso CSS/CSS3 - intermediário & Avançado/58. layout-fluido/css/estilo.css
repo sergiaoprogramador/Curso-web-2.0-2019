@@ -1,0 +1,69 @@
+/* *******************************
+Layouts */
+
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+div#container {
+    width: 85%;
+    margin: 0 auto;
+    background: #fff;
+    min-width: 720px;
+    max-width: 1280px;
+}
+
+div#marca {
+    width: 100%;
+    height: 100px;
+    background: #9e9e9e;
+    text-align: center;
+    line-height: 100px;
+}
+
+div#conteudo {
+    width: 75%; /* 520px * 100 / 700 = 75 */
+    float: right;
+}
+
+div#conteudo-principal {
+    width: 63%; /* 320px * 100 / 500 = 64 */
+    float: left;
+}
+
+div#conteudo-secundario {
+    width: 34%; /* 180px * 100 / 500 = 36 */
+    float: right;
+    background: #d1d1d1;
+}
+
+div#conteudo-secundario h1,
+div#conteudo-secundario h2,
+div#conteudo-secundario h3,
+div#conteudo-secundario p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div#navegacao {
+    width: 23%; /* 180px * 100 / 700 = 25 */
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #d1d1d1;
+}
+
+div#navegacao ul {
+    list-style: none;
+}
+
+div#navegacao li a {
+    text-decoration: none;
+}
+
+div#rodape {
+    clear: both;
+    background: #c4c4c4;
+    padding: 5px;
+}
