@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>Flexbox - Flexible Box Layout</title>
+    
+    <style type="text/css">
+        
+        div#conteudo {
+            background: #dcdcdc;
+            height: 400px;
+            display: flex;
+            /* row | row-reverse | column | column-reverse */
+            /* flex-direction: row; */
+            /* nowrap  | wrap | wrap-reverse */
+            /* flex-wrap: nowrap; */
+
+            /* flex-start | flex-end | center | space-between | space-around */
+            /* justify-content: space-around; */
+
+            /* stretch | center | flex-start | flex-end | baseline */
+            /* align-items: baseline; */
+        }
+
+        div.item {
+            /* width: 200px; */
+            height: 100px;
+            background: white;
+            border: 1px solid gray;
+            margin: 10px;
+
+            /* Define a proporção de espaço ocupado por um item */
+            flex-grow: 0;
+
+            /* Define a capacidade de redução de tamanho do item */
+            flex-shrink: 1;
+
+            /* Indica o tamanho inicial do flex item antes da distribuição do espaço restante */
+            flex-basis: 200px;
+
+        }
+
+        div.item1 {
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+        }
+
+        div.item2 {
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+        }
+
+        div.item3 {
+            /* flex-grow: 2; */
+            /* flex-shrink: 5; */
+        }
+
+        /* div.ordem1 {
+            order: 1;
+        }
+
+        div.ordem2 {
+            order: 2;
+        }
+
+        div.ordem3 {
+            order: 3;
+        }
+
+        div.ordem4 {
+            order: 4;
+        }
+
+        div.ordem {
+            order: -1;
+        } */
+
+    </style>
+
+</head>
+<body>
+
+    <!-- https://www.w3schools.com/cssref/css3_pr_flex-direction.asp -->
+    <!-- https://www.w3schools.com/cssref/css3_pr_flex-wrap.asp -->
+    <!-- https://www.w3schools.com/cssref/css3_pr_justify-content.asp -->
+    <!-- https://www.w3schools.com/cssref/css3_pr_align-items.asp -->
+
+    <!-- https://caniuse.com/#search=flexbox -->
+    <!-- https://autoprefixer.github.io/ -->
+    <!-- https://github.com/jonathantneal/flexibility -->
+
+    <h1>Flexbox</h1>
+    
+    <div id="conteudo">
+        <div class="item item1">01</div>
+        <div class="item item2">02</div>
+        <div class="item item3">03</div>
+        <div class="item">04</div>
+    </div>
+
+</body>
+</html>
