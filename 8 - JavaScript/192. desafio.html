@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript</title>
+
+    <script>
+        
+        function acionaCampo () {
+            document.getElementById("campo_texto").style.background = "yellow"
+        }
+
+        function verificaConteudo () {
+            var texto = document.getElementById("campo_texto").value
+
+            if(texto.length < 3) {
+                document.getElementById("campo_texto").style.background = "red"
+            }
+
+            if(texto.length >= 3) {
+                document.getElementById("campo_texto").style.background = "green"
+            }
+        }
+
+    </script>
+</head>
+<body>
+
+    <input type="text" onfocus="acionaCampo()" onblur="verificaConteudo()" id="campo_texto">
+
+</body>
+</html>
