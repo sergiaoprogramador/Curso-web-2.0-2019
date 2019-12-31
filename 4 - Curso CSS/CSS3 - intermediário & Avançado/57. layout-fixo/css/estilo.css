@@ -35,15 +35,11 @@ div#conteudo-secundario {
     background: #d1d1d1;
 }
 
-div#conteudo-secundario h1,
 div#conteudo-secundario h2,
-div#conteudo-secundario h3,
 div#conteudo-secundario p {
     padding-left: 20px;
     padding-right: 20px;
 }
-
-
 
 div#navegacao {
     width: 180px;

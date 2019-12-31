@@ -34,7 +34,9 @@
                 position: fixed;
                 /* top, right, bottom, left - pode ser usado valores negativos e positivos - é alinhado baseado na janela do navegador */
                 right: 0px;
-                bottom: 0px;
+                bottom: 400px;
+                top: 0px;
+                left: 0px;
             }
 
             .absolute {
@@ -42,16 +44,17 @@
                 position: absolute;
                 /* top, right, bottom, left - pode ser usado valores negativos e positivos - caixa é removida do fluxo padrão do documento */
                 background: #f2f2f2;
-                top: 80px;
-                right: 20px;
+                top: 400px;
+                right: 0px;
+                left: 100px;
             }
 
             .relative {
                 border: 1px solid red;
                 position: relative;
                 /* top, right, bottom, left - pode ser usado valores negativos e positivos - posicionamento acontece apartir do posicionamento inicial do elemento */
-                top: 20px;
-                left: 80px;
+                top: 0px;
+                left: 400px;
             }
 
         </style>
@@ -66,7 +69,7 @@
                 P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non laoreet lectus, non feugiat urna. Ut at lectus suscipit, imperdiet augue sollicitudin, ultricies erat.
             </p>
 
-            <p class="fixed">
+            <p class="relative">
                 P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non laoreet lectus, non feugiat urna. Ut at lectus suscipit, imperdiet augue sollicitudin, ultricies erat.
             </p>
 
